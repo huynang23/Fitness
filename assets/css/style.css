@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+.text-while{
+    color: #fff !important;
+}
+#main{
+
+
+}
+#header{
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+height: 46px;
+background-color: black;
+z-index: 1;
+
+}
+#nav{
+ display: inline-block;
+    
+}
+#nav , .subnav{
+    list-style-type: none;
+}
+
+#nav>li{
+    display: inline-block ;
+}
+
+#nav li{
+    
+    position: relative;
+}
+#nav> li> a{
+    color: white; 
+    text-transform: uppercase;
+}
+
+#nav li a{
+   
+    text-decoration: none; 
+    line-height: 46px; 
+    padding: 0 24px;
+    display: block;
+}
+
+#nav >li:hover> a,
+#nav .subnav li:hover a{
+color: black;
+background-color: #ccc;
+display: inline-block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav{
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 60px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    padding: 0 12px;
+    color: #000;
+    line-height: 38px;
+
+}
+
+#nav .nav-arrow-down{
+    font-size: 12px;
+}
+
+#header .search-btn{
+    float: right;
+    
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 14px; 
+    line-height: 46px;
+    padding: 0 16px;
+  
+}
+#header .search-btn:hover{
+    background-color: #f44336!important;  
+    cursor: pointer;
+}
+.login{
+    color: white;
+    text-decoration: none;
+    /* padding-left: 400px; */
+    float: right;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+
+}
+.login:hover{
+    color: black;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46px; 
+    padding-top: 50%;
+    background: url(/assets/img/slider/banner.jpg) top center / cover no-repeat;
+
+ 
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+
+}
+
+#content{
+    text-align: center;
+}
+:root{
+    --clr-neutral-900:hsl(207 19% 9%);
+    --clr-neutral-100:hsl(0 0% 100%);
+    --clr-accent-400:hsl(142 90% 61%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #060c21;
+}
+.main-box{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(21, 20, 20);
+}
+.box {
+ 
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    background: #060c21; 
+    transition: .5s;
+    cursor: pointer;
+    
+}
+
+.box:hover {
+    height: 400px;
+}
+
+.box .imgBx {
+  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box .imgBx img {
+    max-width: 100%;
+    opacity: .3;
+    transition: .5s; 
+}
+
+.box:hover .imgBx img {
+    opacity: 1;  
+}
+
+.box:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+
+}
+
+.box:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+
+}
+
+.box:before,
+.box:after   {  
+    background: linear-gradient(235deg, #2196f3, #010615, #F00000);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after { 
+    background: linear-gradient(235deg, #2196f3, #010615, #F00000);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after  { 
+    background: linear-gradient(235deg, #772aff, #010615, #2196f3);
+}
+
+.box .content {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 90px;
+    background: rgba(0,0,0,.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content {
+    opacity: 1;
+}
+
+.box .content h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.box .content h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}  
+.main-input{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 600px;
+
+}
+.contact-input{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#footer{
+    background-color: #111;
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
+    place-items: center;
+}
+
+.footer-content>h2{
+    color: white;
+}
+.fa-solid{
+    color: white;
+}
+.location{
+    color: white;
+}
+ .social-btn .icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    float: right;
+    overflow: hidden;
+    margin: 0 5px;
+    background: rgb(250, 250, 250);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition:all 0.3s ease-out ;
+
+    
+}
+.social-btn .icon:hover{
+    width: 150px;
+}
+.social-btn .icon .icon-social{
+    
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:nth-child(5):hover .icon-social{
+    background: #4267B2;
+}
+.social-btn .icon:nth-child(4):hover .icon-social{
+    background: #1DA1F2;
+}
+.social-btn .icon:nth-child(3):hover .icon-social{
+    background: #E1306C;
+}
+.social-btn .icon:nth-child(2):hover .icon-social{
+    background: #333;
+}
+.social-btn .icon:nth-child(1):hover .icon-social{
+    background: #FF0000;
+}
+
+
+.social-btn .icon .icon-social .i{
+    font-size: 25px;
+    line-height: 60px;
+    transition:all 0.3s ease-out ;
+}
+.social-btn .icon:hover .icon-social .i{
+    color:#fff ;
+}
+.social-btn .icon .span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition:all 0.3s ease-out ;
+}
+
+
