@@ -317,7 +317,8 @@ body {
     color: white;
 }
  .social-btn .icon{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 60px;
     height: 60px;
     float: right;
@@ -331,8 +332,15 @@ body {
 
     
 }
-.social-btn .icon:hover{
+.social-btn .icon span{
+display: none;
+}
+
+.social-btn .icon:hover {
     width: 150px;
+}
+.social-btn .icon:hover .social-btn .icon span{
+   display: block;
 }
 .social-btn .icon .icon-social{
     
