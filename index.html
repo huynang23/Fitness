@@ -18,59 +18,85 @@
 
 <body>
     <div id="main">
-        <div id="header">
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Program</a></li>
-                <li><a href="">Contact</a></li>
-                <li>
-                    <a href="">
-                        More
-                        <i class="nav-arrow-down ti-angle-down"> </i>
-                    </a>
-                    <ul class="subnav">
-                        <li><a href="">Recipes</a></li>
-                        <li><a href="">PT</a></li>
-                        <li><a href="">Media</a></li>
+       
+        <header>
+            <nav>
+                <h2 class="logo"></h2>
+                <ul>
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="./program.html"><li>Program</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="#"><li>Shop</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="./login.html"><li>Login</li></a>
 
-                    </ul>
-                </li>
-
-            </ul>
-            <a class="login" href="./login.html">Login</a>
-            <div class="search-btn">
-                <i class="search-icon ti-search"></i>
+                </ul>
+            </nav>
+            <div class="banner">
+                <div class="intro">
+                    <h2>Be Strong Fitness</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button class="btn-contact">Contact Now</button>
+                </div>
             </div>
-
-        </div>
+        </header>
         <!-- end header -->
 
-        <div id="slider">
+        <!-- <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">GET IN SHAPE TODAY</h2>
                 <div class="text-description">HEALTH & FITNESS CENTRE</div>
             </div>
 
-        </div>
+        </div> -->
 
         <div id="content">
             <!-- About section  -->
-            <div class="content-section">
-                <h2 class="section-heading">HEALTH & FITNESS CENTRE SINCE 1985</h2>
-                <p class="section-sub-heading">Being a member goes beyond getting fit, it’s part of being a family.</p>
-                <p class="about-text">
-                    Studies show that you are over three times more likely to reach your fitness goals when working with
-                    a personal trainer instead of training alone. Our personal training programs are led by accredited
-                    university or college educated instructors with knowledge in kinesiology or health sciences.
-                </p>
+            <section class="about" id="about">
+
+                <div class="row">
+                
+                    <div class="image">
+                        <img src="./assets/img/slider/about.jpg" alt="">
+                    </div>
+                
+                    <div class="content">
+                        <h3>A Word About Us</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illo saepe! Magnam, unde explicabo amet perferendis voluptate distinctio facilis quae ipsa quas! Officiis veritatis aut est vero id, debitis pariatur?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta laboriosam. Laborum aspernatur laboriosam deserunt cupiditate laudantium illum commodi. Vero.</p>
+                        <a href="#"><button class="btn-slider">Learn More</button></a>
+                    </div>
+                
+                </div>
+                
+                </section>
+
+                <!-- ***** -->
+
+
+                <div class="row-card">
+                    <div class="card" style="color: white;background: var(--secondary-color);">
+                        <h2>Progression</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        
+                    </div>
+                    <div class="card" style="background: white;">
+                        <h2 style="color: var(--primary-color);">Workout</h2>
+                        <p style="color: var(--secondary-color);">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        
+                    </div>
+                    <div class="card" style="color: white;background: var(--primary-color);">
+                        <h2>Nutrition</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                        
+                    </div>
+                </div>
 
                 <div class="main-box">
                     <div class="box">
 
                         <div class="imgBx">
-                            <img src="https://images.unsplash.com/photo-1515161079661-197513d8b51e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGJsdWUlMjByZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                            <img src="./assets/img/band/pic0.jpg"
                                 alt="">
                         </div>
                         <div class="content">
@@ -108,42 +134,243 @@
                         </div>
                     </div>
                 </div>
+                <!-- trainer section starts  -->
+
+<section class="trainer" id="trainer">
+
+    <h1 class="heading">Our trainers</h1>
+    
+    <div class="box-container">
+    
+        <div class="box-coach">
+            <img src="./assets/img/coach/coach1.png" alt="">
+            <div class="info">
+                <h3>Chris Hemsworth</h3>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    
+        <div class="box-coach">
+            <img src="./assets/img/coach/coach2.jpg" alt="">
+            <div class="info">
+                <h3>Andrei Deiu</h3>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    
+        <div class="box-coach">
+            <img src="./assets/img/coach/coach3.jpg" alt="">
+            <div class="info">
+                <h3>Sergi Constance</h3>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    
+        <div class="box-coach">
+            <img src="./assets/img/coach/coach4.jpg" alt="">
+            <div class="info">
+                <h3>Anllela Sagra</h3>
+            </div>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- trainer section ends -->
 
 
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+    <h1 class="heading">Our services</h1>
+    
+    <div class="box-container">
+    
+        <div class="box">
+            <img src="./assets/img/service/img1.jpg" alt="">
+            <div class="info">
+                <h3>Treadmill</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="./assets/img/service/img2.jpg" alt="">
+            <div class="info">
+                <h3>Yoga</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="./assets/img/service/img3.jpg" alt="">
+            <div class="info">
+                <h3>Trainer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="./assets/img/service/img4.jpg" alt="">
+            <div class="info">
+                <h3>Equipments</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="./assets/img/service/img5.jpg" alt="">
+            <div class="info">
+                <h3>Boxing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+        <div class="box">
+            <img src="./assets/img/service/img6.jpg" alt="">
+            <div class="info">
+                <h3>Weight lifting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+                <a href="#"><button class="btn-service">More</button></a>
+            </div>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- service section ends -->
+
+    <!-- plan section starts  -->
+
+<section class="plan" id="plan">
+
+    <h1 class="heading">Membership Plan</h1>    
+    
+    <div class="box-plan">
+    
+        <div class="box-price">
+            <h3 class="title">Basic</h3>
+            <h3 class="price">$10<span>/mo</span></h3>
+            <h3 class="month">12 months</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Weight lifting</li>
+                <li><i class="fas fa-check"></i>Cardio</li>
+                <li><i class="fas fa-check"></i>Yoga</li>
+                <li><i class="fas fa-check"></i>Training</li>
+                <li><i class="fas fa-check"></i>Protein powder</li>
+            </ul>
+            <a href="#"><button class="btn-plan">Check out</button></a>
+        </div>
+    
+    
+        <div class="box-price">
+            <h3 class="title">Standard</h3>
+            <h3 class="price">$20<span>/mo</span></h3>
+            <h3 class="month">12 months</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Weight lifting</li>
+                <li><i class="fas fa-check"></i>Cardio</li>
+                <li><i class="fas fa-check"></i>Yoga</li>
+                <li><i class="fas fa-check"></i>Training</li>
+                <li><i class="fas fa-check"></i>Protein powder</li>
+            </ul>
+            <a href="#"><button class="btn-plan">Check out</button></a>
+        </div>
+    
+    
+        <div class="box-price">
+            <h3 class="title">Premium</h3>
+            <h3 class="price">$30<span>/mo</span></h3>
+            <h3 class="month">12 months</h3>
+            <ul>
+                <li><i class="fas fa-check"></i>Weight lifting</li>
+                <li><i class="fas fa-check"></i>Cardio</li>
+                <li><i class="fas fa-check"></i>Yoga</li>
+                <li><i class="fas fa-check"></i>Training</li>
+                <li><i class="fas fa-check"></i>Protein powder</li>
+            </ul>
+            <a href="#"><button class="btn-plan">Check out</button></a>
+        </div>
+    
+    </div>
+    
+    </section>
+    
+    <!-- plan section ends -->
 
 
+    <!-- register section starts  -->
 
-                <!-- Contact section  -->
-                <div class="contact-section">
-                    <h2 class="contact-heading">CONTACT</h2>
-                    HaNoi, VN<br>
-                    Phone: +84 12345<br>
-                    Email: mail@mail.com<br>
-                    <p class="contact-note"><i>Join? Drop a note!</i></p>
-                    <form action="#" target="" class="main-input">
-                        <input class="contact-input" type="text" placeholder="Name" required name="Name">
-                        <input class="contact-input" type="text" placeholder="Email" required name="Email">
-                        <input class="contact-input" type="text" placeholder="Message" required name="Message">
-                        <br>
-                        <button class="contact-button" type="submit">SEND</button>
-                    </form>
-                    <img src="./assets/img/maps/map.jpg" class="w3-image" style="width:100%">
+<section class="register" id="register">
 
-                </div>
+    <h1 class="heading">Register Now</h1>
+    
+    <form action="">
+    
+        <div class="inputBox">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+    
+        <div class="inputBox">
+            <input type="email" placeholder="Your email">
+            <input type="number" placeholder="Your number">
+        </div>
+    
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    
+        <input type="submit" class="btn" value="register">
+    
+    </form>
+    
+    </section>
+    
+    <!-- register section ends -->
+    
 
 
             </div>
 
             <div id="footer">
+                
                 <div class="footer-content">
-                    <h2 class="">Mindx FITNESS
-                </div>
+                    <h2 class="logo-footer"> </h2>
+                
                 <p class="location">
                     <i class="fa-solid fa-location-dot"></i>
                     22C Thành Công, Ba Đình, Hà Nội
                 </p>
-                </h2>
-
+               
+                  </div>
                 <div class="social-btn">
                     <div class="icon">
                         <div class="icon-social"><i class="fa fa-youtube" id="youtube"></i></div>
@@ -184,10 +411,10 @@
 
             </div>
         </div>
+
+        <!-- js icon -->
         <script>
             let listIcon = document.querySelectorAll('div.icon');
-            // console.log(listIcon);
-            // khoa đẹp trai
             let spanInIcon = document.querySelectorAll('div.icon span')
             for (let i = 0; i < listIcon.length; i++) {
                 listIcon[i].addEventListener('mouseover', (e) => {

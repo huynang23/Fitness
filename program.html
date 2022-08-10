@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/program.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Program</title>
+</head>
+<body>
+    <div id="main">
+       
+        <header>
+            <nav>
+                <h2 class="logo"></h2>
+                <ul>
+                    <a href="/index.html"><li>Home</li></a>
+                    <a href="#"><li>Program</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>FAQ</li></a>
+                    <a href="./login.html"><li>Login</li></a>
+
+                </ul>
+            </nav>
+            <div class="banner">
+                <div class="intro">
+                    <h2>Be Strong Fitness</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    <button class="btn-contact">Contact Now</button>
+                </div>
+            </div>
+        </header>
+        
+<div class="content">
+    
+</div>
+
+    <div id="footer">
+        
+        <div class="footer-content">
+            <h2 class="logo-footer"> </h2>
+        
+        <p class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            22C Thành Công, Ba Đình, Hà Nội
+        </p>
+       
+          </div>
+        <div class="social-btn">
+            <div class="icon">
+                <div class="icon-social"><i class="fa fa-youtube" id="youtube"></i></div>
+                <span>Youtube</span>
+            </div>
+
+
+
+            <div class="icon">
+                <div class="icon-social"><i class="fa fa-github" id="github"></i></div>
+                <span>Github</span>
+            </div>
+
+
+
+            <div class="icon">
+                <div class="icon-social"><i class="fa fa-instagram" id="instagram"></i></div>
+                <span>Instagram</span>
+            </div>
+
+
+
+
+            <div class="icon">
+                <div class="icon-social"><i class="fa fa-twitter" id="twitter"></i></div>
+                <span>Twitter</span>
+            </div>
+
+
+            <div class="icon">
+                <div class="icon-social"><i class="fa fa-facebook-square" id="facebook"></i></div>
+                <span>Facebook</span>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+
+<!-- js icon -->
+<script>
+    let listIcon = document.querySelectorAll('div.icon');
+    let spanInIcon = document.querySelectorAll('div.icon span')
+    for (let i = 0; i < listIcon.length; i++) {
+        listIcon[i].addEventListener('mouseover', (e) => {
+            spanInIcon[i].style.display = 'block';
+        })
+        listIcon[i].addEventListener('mouseout', (e) => {
+            spanInIcon[i].style.display = 'none';
+        })
+    }
+</script>
+</body>
+
+</html>
