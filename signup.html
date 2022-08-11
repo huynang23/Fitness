@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/login.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/signup.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -33,26 +33,29 @@
       </header>
       <div class="content">
 
-          <div class="wapper">
-              <div class="wapper-heading">
-                <h1>Login</h1>
-              </div>
-              <form onsubmit="login()">
-                <div class="input__field">
-                  <input id="username" type="text" placeholder="User Name" />
-                </div>
-        
-                <div class="input__field">
-                  <input id="email" type="text" placeholder="Email" />
-                </div>
-                <div class="input__field">
-                  <input id="password" type="password" placeholder="Password" />
-                </div>
-                <a href="signup.html" class="signup-link">Sign Up</a>
-                <button id="btn" class="btn">Login</button>
-              </form>
+        <div class="wapper">
+            <div class="wapper-heading">
+              <h1>Sign Up</h1>
             </div>
-            <script src="/js/login.js"></script>
+            <form onsubmit="signup()">
+              <div class="input__field">
+                <input id="username" type="text" placeholder="User Name" />
+              </div>
+      
+              <div class="input__field">
+                <input id="email" type="text" placeholder="Email" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Password" />
+              </div>
+              <div class="input__field">
+                <input id="password" type="password" placeholder="Confirm Password" />
+              </div>
+              <a href="login.html" class="login-link">Login</a>
+              <button id="btnSignup" class="btn">Sign Up</button>
+            </form>
+          </div>
+          <script src="./js/login.js"></script>
       </div>
 
 

@@ -407,6 +407,7 @@ body {
     overflow: hidden;
     position: relative;
     box-shadow: 0 .3rem .5rem #000;
+    cursor: pointer;
 }
 
 .trainer .box-container .box-coach img{
@@ -569,7 +570,7 @@ body {
 .plan .box-plan .box-price{
     background:#fff;
     margin:2rem;
-    width:20rem;
+    width:23rem;
     height: 35rem;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     transition: all .2s linear;
@@ -613,7 +614,7 @@ body {
 .plan .box-plan .box-price ul li{
     text-align: left;
     padding:.2rem 3px;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color:#333;
 }
 
